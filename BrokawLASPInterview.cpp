@@ -34,7 +34,7 @@ int main(int argc, char* argv[])
 
     bool transform = false; //The assumption is the transform will not occur
 
-    if(transformOption.compare("true") || transformOption.compare("TRUE"))
+    if(!transformOption.compare("true") || !transformOption.compare("TRUE"))
     {
         transform = true; //The transform has been selected, it has been turned to true.
     }
